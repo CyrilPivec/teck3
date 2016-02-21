@@ -1,0 +1,47 @@
+<ion-view view-title="{{cProfil.name}} {{cProfil.firstname}}">
+
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    
+  <ion-content class="padding">
+    <div style="text-align : center;">
+      <img ng-src="{{cProfil.face}}" class="img-circle" style="height : 200px;"></img>
+      <p>
+        <br>
+        <!--<a class="item item-icon-left">
+        {{cProfil.name}} {{cProfil.firstname}}
+        </a>-->
+        <div class="button-bar">
+          <a class="button icon ion-ribbon-b"> {{cProfil.note}} / 20</a>
+          <a class="button icon ion-pizza"> {{cProfil.nb_plat}} Repas</a>
+          <a class="button ">Follow</a>
+        </div>
+        <a class="item item-icon-left">
+          <i class="icon ion-male"></i>
+          {{cProfil.age}} ans
+        </a>
+        <a class="item item-icon-left item-text-wrap">
+          <i class="icon ion-ios-paper"></i>
+          {{cProfil.description}}
+        </a>
+        <a class="item item-icon-left">
+          <i class= "icon ion-ios-location"></i>
+          {{cProfil.location}}
+        </a>
+          <a class="item item-icon-left">
+            <i class="icon ion-chatbubble-working"></i>
+            Joindre
+          </a>
+      </p>
+    </div>
+
+  
+
+  
+
+
+ </ion-content>
+</ion-view>

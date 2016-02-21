@@ -1,0 +1,12 @@
+{
+  "name": "Foodies",
+  "app_id": "6f1be8a1",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

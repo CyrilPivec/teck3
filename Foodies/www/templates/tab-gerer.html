@@ -1,0 +1,20 @@
+<ion-view view-title="Mes plats">
+
+	<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+	
+	<ion-content>
+		
+		<ion-list>
+			<ion-item ng-repeat="plat in cPlats" href="#/app/tab/gerer/{{plat.id}}">
+				{{plat.dishName}}
+			</ion-item>		
+		</ion-list>
+		<!--<div ng-repeat="plat in cPlats">
+			<ion-item ng-click="goToPlat(plat)">{{plat.dishName}}</ion-item>
+		</div>-->
+		
+	</ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-view view-title="Proposer un plat">
+
+  <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+  <ion-content>
+  <div class="list">
+  	<label class="item item-input item-stacked-label">
+  		<span class="input-label">Intitulé</span>
+  		<input type="text" placeholder="Pizza 42 fromages">
+  	</label>
+  	<a class="item item-thumbnail-right" href="#">
+  		<img src="img/pizza.jpg">
+  		<h2>Qu'est ce que c'est ?</h2>
+  		<p>Pizza</p>
+  	</a>
+  	<label class="item item-input item-stacked-label">
+  		<span class="input-label">Adresse</span>
+  		<input type="text" placeholder="42 rue de la gourmandise">
+  	</label>
+  	<label class="item item-input item-stacked-label">
+  		<span class="input-label">Ville</span>
+  		<input type="text" placeholder="Miam City">
+  	</label>
+  	<label class="item item-input" ng-controller="PriceCtrl">
+  		<span class="input-label">Prix : {{data.price}} €</span>
+  		<div class="item range">
+  			<i class="icon ion-minus-circled"></i>
+  			<input type="range" name="volume" min="0.0" max="20.0" ng-model="data.price">
+  			<i class="icon ion-plus-circled"></i>
+  		</div>
+  	</label>
+  	<button class="button button-block button-positive" ng-click="goGerer()">
+  		Proposer !
+  	</button>
+  </div>
+  </ion-content>
+</ion-view>
