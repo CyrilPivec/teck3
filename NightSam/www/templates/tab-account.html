@@ -1,0 +1,35 @@
+<ion-view view-title="{{profil.nom}} {{Profil.prenom}}">
+
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    
+  <ion-content class="padding">
+    <div style="text-align : center;">
+      <img ng-src="{{profil.face}}" class="img-circle" style="height : 200px;"></img>
+      <p>
+        <br>
+        <div class="button-bar bar-positive">
+          <a class="button">Follow</a>
+          <a class="button">Follower</a>
+        </div>
+        <a class="item item-icon-left">
+          <i class="icon ion-male"></i>
+          {{profil.age}} ans
+        </a>
+        <a class="item item-icon-left">
+          <i class="icon ion-chatbubble-working"></i>
+          Joindre
+        </a>
+      </p>
+    </div>
+
+  
+
+  
+
+
+ </ion-content>
+</ion-view>
