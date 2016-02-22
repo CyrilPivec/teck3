@@ -1,4 +1,4 @@
-# teck3 Projets
+# Projets
 
 Octobre 2015 – Février 2018 : 
 
@@ -22,8 +22,8 @@ Projets scolaires :
 
                               - Site Web de e-commerce en Java, Environnement J2EE (dispo sans bdd)
                               - Application Android, intranet en Java (dispo)
-                              - Algorithme d’intelligence artificielle pour le jeu Gomoku, en python
-                              - Jeu BomberMan, en C++
-                              - Jeu interactif en réseau, serveur en C, interface graphique en C++, IA en Python
-                              - Drone quadricoptère (projet HUB), programmation du serveur en C
-                              - Réalisation d’un Shell en C
+                              - Algorithme d’intelligence artificielle pour le jeu Gomoku, en python 
+                              - Jeu BomberMan, en C++ (2ème année)
+                              - Jeu interactif en réseau, serveur en C, interface graphique en C++, IA en Python (2ème année)
+                              - Drone quadricoptère (projet HUB), programmation du serveur en C (2 et 3ème année)
+                              - Réalisation d’un Shell en C (1ère année)
