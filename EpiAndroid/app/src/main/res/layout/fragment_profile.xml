@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/section_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/infosLayout">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Profile"
+            android:id="@+id/textView"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="left|top" />
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="143dp"
+            android:id="@+id/img"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="50dp"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/title"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/login"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/promo"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/log"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/location"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/semester"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_gravity="left|bottom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=" Last messages"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView2"
+            android:layout_gravity="center" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="232dp"
+            android:id="@+id/listMessagesView"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/progressLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/infosLayout">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
