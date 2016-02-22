@@ -1,0 +1,11 @@
+#version 120
+
+attribute vec3 vPosition;
+attribute vec2 texCoord;
+varying vec2 texCoord0;
+
+void main(void)
+{
+  gl_Position = vec4(vPosition, 1.0);
+  texCoord0 = texCoord;
+}

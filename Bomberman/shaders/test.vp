@@ -1,0 +1,18 @@
+#version 120
+
+uniform sampler2D fTexture0;
+
+attribute vec3 vPosition;
+attribute vec4 vColor;
+attribute vec4 vNormal;
+attribute vec2 vTexCoord;
+
+varying vec4 fNormal;
+varying vec2 fUv;
+
+void main(void)
+{
+  fNormal = vNormal;
+  fUv = vTexCoord;
+  gl_Position = vec4(vPosition, 1.0);
+}

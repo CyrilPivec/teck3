@@ -1,0 +1,8 @@
+To unzip Libbomberman:
+
+gzip -dc LibBomberman_linux_x64.tar.gz | tar -xzvf -
+
+
+To launch the game:
+
+./launch
