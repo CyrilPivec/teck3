@@ -1,12 +1,3 @@
-//
-// GameEngine.cpp for bomberman in /home/nawin/rendu/cpp_bomberman
-// 
-// Made by Nawin Kim
-// Login: kim_n <kim_n@epitech.net>
-// 
-// Started on  Sat May  2 14:31:31 2015 Nawin Kim
-// Last update Sun May 10 21:38:43 2015 Nawin Kim
-//
 
 #include "GameEngine.hpp"
 #include <iostream>
