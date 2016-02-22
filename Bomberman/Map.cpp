@@ -1,12 +1,3 @@
-//
-// Map.cpp for bomberman in /home/nawin/rendu/cpp_bomberman
-// 
-// Made by Nawin Kim
-// Login: kim_n <kim_n@epitech.net>
-// 
-// Started on  Fri May  8 21:29:19 2015 Nawin Kim
-// Last update Fri May  8 22:29:24 2015 Nawin Kim
-//
 
 #include "Map.hpp"
 
