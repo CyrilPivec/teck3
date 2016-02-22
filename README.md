@@ -1,4 +1,4 @@
-# teck3
+# teck3 Projets
 
 Octobre 2015 – Février 2018 : 
 
@@ -7,6 +7,8 @@ Octobre 2015 – Février 2018 :
                               Application de planification de soirées sur IOS, Android et Web
                               Technologie envisagées : Node.js, AngularJS, Java, Swift
 
+                              Squelette de l'application disponible (poc)
+
 Septembre 2015 – Avril 2016 : 
 
                               Application Foodies, Développeur 
@@ -14,10 +16,12 @@ Septembre 2015 – Avril 2016 :
                               Développement d’une application de partage de repas sur IOS, Android et Web
                               Technologies utilisées : HTML, CSS, AngularJS, Ionic Framework
 
+                              Front disponible
+
 Projets scolaires :           
 
-                              - Site Web de e-commerce en Java, Environnement J2EE
-                              - Application Android, intranet en Java
+                              - Site Web de e-commerce en Java, Environnement J2EE (dispo sans bdd)
+                              - Application Android, intranet en Java (dispo)
                               - Algorithme d’intelligence artificielle pour le jeu Gomoku, en python
                               - Jeu BomberMan, en C++
                               - Jeu interactif en réseau, serveur en C, interface graphique en C++, IA en Python
