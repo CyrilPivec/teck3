@@ -103,7 +103,7 @@ angular.module('starter.services', [])
   }, {
     id: 4,
     name: 'Florian Tousch',
-    lastText: 'Viens on va au bar ya de la shneck',
+    lastText: 'Viens on va au bar',
     face: 'img/mike.png'
   }];
 
