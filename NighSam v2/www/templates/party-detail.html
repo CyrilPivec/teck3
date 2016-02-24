@@ -1,0 +1,39 @@
+<ion-view view-title="{{party.name}}">
+  
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  
+  <ion-content class="padding">
+  	<div style="text-align: center" class="list list-inset">
+  		<div class="item">
+        <h1>{{party.place}}</h1>
+      </div>
+      <div class="item item-image">
+        <img ng-src="{{party.face}}">
+      </div>
+      <div class="item">
+        <h2>{{party.name}}</h2>
+      </div>
+      <div class="item item-icon-left item-body">
+        <i class="icon ion-compose"></i>
+        <p>{{party.description}}</p>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-home"></i>
+        <p>{{party.adresse}}</p>
+      </div>
+    </div>
+
+    <div class="row"> 
+      <div class="col">
+        <button class="button button-block button-calm">Join</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-calm">Live</button>
+      </div>     
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-view view-title="{{accountProfile.nom}} {{accountProfile.prenom}}">
+
+  <ion-nav-bar class="bar-stable">    
+  </ion-nav-bar>
+  
+  <ion-content class="padding">
+    <div style="text-align: center">
+      <img ng-src="{{accountProfile.face}}" class="img-circle" style="height : 200px;"></img>
+    </div>
+    
+    <br/><br/>
+    <div class="row"> 
+      <div class="col">
+        <button class="button button-block button-calm">Join</button>
+      </div>
+      <div class="col">
+        <button class="button button-block button-calm">Live</button>
+      </div>     
+    </div>
+    
+    <br/><br/>
+    <div style="text-align: center">
+      <a class="item item-icon-left">
+        <i class="icon ion-male"></i>
+        {{accountProfile.age}} ans
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-chatbubble-working"></i>
+        Join
+      </a>
+    </div>
+
+    <br/><br/><br/><br/>
+    <button class="button button-block button-assertive" ng-click="ctrl.logout()">Log Out</button>
+
+ </ion-content>
+</ion-view>

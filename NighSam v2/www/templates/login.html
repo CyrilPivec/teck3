@@ -1,0 +1,26 @@
+<ion-view view-title="Login">
+  <ion-content class="padding">
+
+      <br/><br/><br/>
+      <div style="text-align: center">
+        <div class="app-icon"></div>
+        <h1>NightSam</h1>
+      </div>
+
+      <br/><br/><br/>
+      <div class="list list-inset" style="margin-top: 2px">
+          <label class="item item-input">
+              <input type="email" placeholder="Email" ng-model="data.email" required>
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password" required>
+          </label>
+      </div>
+      <button class="button button-block button-calm" ng-click="ctrl.login(data)">Login</button>
+
+      <br/><br/><br/>
+      <div style="text-align: center">
+        <a href="#/register"><b>Not yet have an account?</b></a>
+      </div>
+  </ion-content>
+</ion-view>

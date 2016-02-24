@@ -1,0 +1,43 @@
+<ion-view view-title="Register">
+  <ion-content class="padding">
+
+      <br/><br/><br/>
+      <div style="text-align: center">
+        <div class="app-icon"></div>
+        <h1>NightSam</h1>
+      </div>
+
+      <br/><br/><br/>
+      <div class="list list-inset" style="margin-top: 2px">
+          <label class="item item-input">
+              <input type="text" placeholder="First Name" ng-model="data.firstname" required>
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Last Name" ng-model="data.lastname" required>
+          </label>
+          <label class="item item-input">
+              <input type="email" placeholder="Email" ng-model="data.email" required>
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password" required>
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Confirm Password" ng-model="data.confirmPassword" required>
+          </label>
+      </div>
+
+      <br/>
+      <div>
+        <ion-radio ng-model="ctrl.choice" value="pro">Is Pro</ion-radio>
+        <ion-radio ng-model="ctrl.choice" value="notPro">Is Client</ion-radio>
+      </div>
+
+      <br/>
+      <button class="button button-block button-calm" ng-click="ctrl.register(data)">Register</button>      
+
+      <br/><br/><br/>
+      <div style="text-align: center">
+        <a href="#/login"><b>Already have an account?</b></a>
+      </div>
+  </ion-content>
+</ion-view>
