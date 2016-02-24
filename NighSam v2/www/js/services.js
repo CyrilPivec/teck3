@@ -184,7 +184,7 @@ angular.module('starter')
   }, {
     id: 1,
     name: 'Fabien Bertinelli',
-    lastText: 'Hey, it\'s me je suis roux',
+    lastText: 'Hey, it\'s me',
     face: 'img/max.png'
   }, {
     id: 2,
@@ -199,7 +199,7 @@ angular.module('starter')
   }, {
     id: 4,
     name: 'Florian Tousch',
-    lastText: 'Viens on va au bar ya de la shneck',
+    lastText: 'Viens on va au bar',
     face: 'img/mike.png'
   }];
 
