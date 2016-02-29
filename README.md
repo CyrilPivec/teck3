@@ -7,7 +7,7 @@ Octobre 2015 – Février 2018 :
                               Application de planification de soirées sur IOS, Android et Web
                               Technologie envisagées : Node.js, AngularJS, Java, Swift
 
-                              Squelette de l'application disponible (poc)
+                              POC disponible
 
 Septembre 2015 – Avril 2016 : 
 
