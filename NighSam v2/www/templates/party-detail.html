@@ -31,9 +31,24 @@
         <button class="button button-block button-calm">Join</button>
       </div>
       <div class="col">
-        <button class="button button-block button-calm">Live</button>
+        <button class="button button-block button-calm" ng-click="ctrl.playVideo()">Live</button>
       </div>     
     </div>
+
+    <ion-list>
+      <ion-item class="item-remove-animate item item-thumbnail-left item-icon-right" ng-repeat="person in ctrl.people" type="item-text-wrap">
+        <img ng-src="{{person.face}}">
+        <h2>{{person.name}}</h2>
+        <p>{{person.sam}}</p>
+        <ion-option-button class="button-positive">
+            Etre sam
+        </ion-option-button>
+        <ion-option-button class="button-assertive" ng-click="ctrl.remove(person)">
+            Quitter
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
 
   </ion-content>
 </ion-view>

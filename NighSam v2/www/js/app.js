@@ -71,7 +71,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'backand'])
     views: {
       'tab-party': {
         templateUrl: 'templates/party-detail.html',
-        controller: 'PartyDetailCtrl'
+        controller: 'PartyDetailCtrl as ctrl'
+      }
+    }
+  })
+
+  .state('tab.reservation', {
+    url: '/reservation',
+    views: {
+      'tab-reservation': {
+        templateUrl: 'templates/tab-reservation.html'
       }
     }
   })

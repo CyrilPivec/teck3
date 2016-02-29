@@ -35,6 +35,41 @@ angular.module('starter')
 
 })
 
+.service('EventService', function($http, Backand) {
+  var service = this,
+      baseUrl = '/1/objects/',
+      objectName = 'Event/';
+
+  function getUrl() {
+    return Backand.getApiUrl() + baseUrl + objectName;
+  }
+
+  function getUrlForId(id) {
+    return getUrl() + id;
+  }
+
+  service.all = function() {
+    return $http.get(getUrl());
+  };
+
+  service.fetch = function(id) {
+    return $http.get(getUrlForId(id));
+  };
+
+  service.create = function(object) {
+    return $http.post(getUrl(), object);
+  };
+
+  service.update = function(id, object) {
+    return $http.put(getUrlForId(id), object);
+  };
+
+  service.delete = function(id) {
+    return $http.delete(getUrlForId(id));
+  };
+
+})
+
 .service('AuthService', function($http, Backand) {
   var self = this;
   var baseUrl = Backand.getApiUrl() + '/1/objects/';
@@ -157,7 +192,7 @@ angular.module('starter')
     face: 'img/chat.jpg'
   }];
 
-  return {
+return {
     all: function() {
       return parties;
     },
@@ -175,6 +210,52 @@ angular.module('starter')
   };
 })
 
+  .factory('People', function() {
+  var people = [{
+    id: 0,
+    name: 'Mathieu Charo',
+    sam: '',
+    face: 'img/mathieu.png'
+  }, {
+    id: 1,
+    name: 'Liza Poulie',
+    sam : '#JeSuisSam',
+    face: 'img/liza.jpg'
+  }, {
+    id: 2,
+    name: 'Léa Viagi',
+    sam: '',
+    face: 'img/lea.jpg'
+  }, {
+    id: 3,
+    name: 'Tom Boris',
+    sam: '',
+    face: 'img/tom.jpg'
+  }, {
+    id: 4,
+    name: 'Mamadou Kafu',
+    sam: '#JeSuisSam',
+    face: 'img/mamadou.jpg'
+  }];
+
+  return {
+    all: function() {
+      return people;
+    },
+    remove: function(person) {
+      people.splice(people.indexOf(person), 1);
+    },
+    get: function(personId) {
+      for (var i = 0; i < people.length; i++) {
+        if (people[i].id === parseInt(personId)) {
+          return people[i];
+        }
+      }
+      return null;
+    }
+  };
+})
+
 .factory('Chats', function() {
   var chats = [{
     id: 0,
@@ -184,7 +265,7 @@ angular.module('starter')
   }, {
     id: 1,
     name: 'Fabien Bertinelli',
-    lastText: 'Hey, it\'s me',
+    lastText: 'Hey, it\'s me je suis roux',
     face: 'img/max.png'
   }, {
     id: 2,
@@ -199,7 +280,7 @@ angular.module('starter')
   }, {
     id: 4,
     name: 'Florian Tousch',
-    lastText: 'Viens on va au bar',
+    lastText: 'Viens on va au bar ya de la shneck',
     face: 'img/mike.png'
   }];
 
